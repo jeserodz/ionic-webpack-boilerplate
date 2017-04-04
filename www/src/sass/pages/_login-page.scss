@@ -1,0 +1,57 @@
+.login-page {
+  padding: 0 5%;
+  background-color: $orange;
+  background-image: url('/img/login-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  .logo {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('/img/champtrack-logo-prototype.png');
+    background-position: 50% 50%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+
+  .username-input, .password-input {
+      background-image: url('/img/icons/user-icon.png');
+      background-size: 20pt;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      background-position-x: 12pt;
+      padding: 0;
+      text-indent: 40pt;
+  }
+
+  .password-input {
+    background-image: url('/img/icons/password-icon.png');
+    background-size: 16pt;
+    background-position-x: 14pt;
+  }
+
+  .login-button {
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10pt;
+
+    a {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 8pt;
+      text-decoration: none;
+    }
+  }
+}

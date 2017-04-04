@@ -1,0 +1,28 @@
+@import 'utils/normalize';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import 'variables';
+
+html, body {
+    margin:0;
+    padding: 0;
+    background-color: $default;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ 
+ * {
+     font-family: 'Montserrat', sans-serif;
+ }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+@import 'components/main-header';
+@import 'components/main-content';
+@import 'components/main-footer';
+@import 'components/fields';
+@import 'pages/login-page';

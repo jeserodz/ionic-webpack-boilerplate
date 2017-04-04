@@ -1,0 +1,39 @@
+.btn, .input {
+  height: 28pt;
+  border: 0;
+  border-radius: 50px;
+  padding: 0 20px;
+  font-size: 10pt;
+  font-weight: 100;
+  margin: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.btn-lg, .input-lg {
+  height: 36pt;
+}
+
+.btn-translucent, .input-translucent {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-solid, .input-solid {
+  background-color: $red;
+
+  &:hover {
+    background-color: lighten($red, 10%);
+  }
+}
+
+.btn-solid, .btn-translucent, .input-solid, .input-translucent {
+  color: #fff;
+  &::-webkit-input-placeholder { color:rgba(255, 255, 255, 0.75); }
+  &::-moz-placeholder { color:rgba(255, 255, 255, 0.75); } /* firefox 19+ */
+  &:-ms-input-placeholder { color:rgba(255, 255, 255, 0.75); } /* ie */
+  &:-moz-placeholder { color:rgba(255, 255, 255, 0.75); }
+}
+
+.btn-block, .input-block {
+  width: 100%;
+}
